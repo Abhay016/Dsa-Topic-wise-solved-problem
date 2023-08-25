@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h>
 #define MOD 1000000007
 using namespace std;
@@ -37,6 +36,7 @@ void merge(vector<int> &nums, int s, int mid, int e)
         nums[i] = temp[i - s];
     }
 }
+
 void sort(vector<int> &nums, int s, int e)
 {
     if (s >= e)

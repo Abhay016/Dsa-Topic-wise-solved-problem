@@ -63,7 +63,6 @@ void solve(vector<vector<int>> &board, int n, int c, vector<vector<int>>& res)
 }
 
 vector<vector<int>> solveNQueens(int n) {
-    // Write your code here.
     vector<vector<int>> board(n, vector<int> (n, 0));
     vector<vector<int>> res;
     solve(board, n, 0, res);

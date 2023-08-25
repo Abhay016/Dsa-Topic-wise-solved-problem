@@ -29,6 +29,6 @@ int minSwaps(vector<int> &nums)
 
 int main()
 {
-    vector<int> nums={10, 19, 6, 3, 5};
-    cout<<minSwaps(nums);
+    vector<int> nums = {10, 19, 6, 3, 5};
+    cout << minSwaps(nums);
 }
