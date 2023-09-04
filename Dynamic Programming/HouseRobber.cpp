@@ -41,19 +41,14 @@ int solve_tab(vector<int> nums)
 /*USING DP(SPACE OPTIMISATION)*/
 int solve_space(vector<int> nums)
 {
-    vector<int> dp(nums.size(), 0);
-    dp[0] = nums[0];
-    int left = INT_MIN, right = INT_MIN;
+    int first = 0, second = nums[0];
     for (int i = 1; i < nums.size(); i++)
     {
-        if (i == 1)
-            left = nums[i];
-        else
-            left = dp[i - 2] + nums[i];
-        right = dp[i - 1];
-        dp[i] = max(left, right);
+        int res = max(first + nums[i], second);
+        first = second;
+        second = res;
     }
-    return dp[nums.size() - 1];
+    return second;
 }
 
 int rob(vector<int> &nums)

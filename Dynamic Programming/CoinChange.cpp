@@ -59,7 +59,7 @@ int solve_tab(vector<int> coins, int amount)
 
 int coinChange(vector<int> &coins, int amount)
 {
-    int res = solve(coins, amount);
+    int res = solve_tab(coins, amount);
     if (res == INT_MAX)
         return -1;
     else

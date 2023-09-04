@@ -22,5 +22,4 @@ int main()
 {
     vector<int> arr = {7, 1, 5, 3, 6, 4};
     cout << maxProfit(arr);
-    cout<<(-3%2);
 }
