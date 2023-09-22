@@ -36,10 +36,10 @@ string smallestWindow(string s, string p)
                     start=i;
                     end=j;
                 }
-            mp[s[i]]++;
-            if(mp[s[i]]==1)
-            count++;
-            i++;
+                mp[s[i]]++;
+                if(mp[s[i]]==1)
+                count++;
+                i++;
             }
         }
         j++;

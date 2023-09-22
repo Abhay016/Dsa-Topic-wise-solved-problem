@@ -21,6 +21,5 @@ int kthSmallest(vector<vector<int>> &matrix, int k)
         else
             e = mid;
     }
-    cout<<'d'-'a';
     return s;
 }
