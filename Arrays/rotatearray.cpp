@@ -23,5 +23,5 @@ int main()
     {
         cout<<arr[i]<<" ";
     }
-    
+    cout<<8772%3956;
 }

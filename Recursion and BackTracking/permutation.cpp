@@ -24,7 +24,7 @@ vector<string> findPermutations(string &s) {
 
 int main()
 {
-    string s="abcd";
+    string s="123";
     vector<string> res=findPermutations(s);
     for(int i=0; i<res.size(); i++)
     {
